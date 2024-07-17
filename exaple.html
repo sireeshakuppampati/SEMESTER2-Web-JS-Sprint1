@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Header>
+        <form id="items">
+            <div class="item1">
+                <label id="1">Big Gary1</label>
+                <input id="q1" type="number">
+            </div>
+            <div class="item2">
+                <label id="2">taters</label>
+                <input id="q2" type="number">
+            </div>
+            <div class="item3">
+                <label id="3">waffles</label>
+                <input id="q3" type="number">
+            </div>
+            <div class="item4">
+                <label id="4">friedchicken</label>
+                <input id="q4" type="number">
+            </div>
+        </form>
+    </Header>
+    <script>
+        let form = document.getElementById('items');
+        let x = document.getElementById("1");
+        let y = document.getElementById("q1");
+        function display(a,b){
+            form.innerHTML`<tr><td>${x}</td><td>${y}</td></tr>`;
+        }
+    </script>
+</body>
+</html>
